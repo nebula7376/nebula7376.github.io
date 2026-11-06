@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>蓝莓视频-蓝莓视频高清在线观看_蓝莓视频影视资源与播放体验</title>
+<meta name="description" content="蓝莓视频是一个在线视频观看平台，提供影视资源浏览、高清播放与频道分类。本页介绍蓝莓视频的频道内容、播放体验、清晰度选择与常见使用问答，帮助访客快速找到想看的视频。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='34' r='22' fill='%234b3bd6'/%3E%3Cpath d='M28 20c1-5 5-8 10-8-1 4-4 7-8 8z' fill='%235fd68a'/%3E%3Cpath d='M26 28v14l13-7z' fill='%23ffffff'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#1b1930;
+    --ink-soft:#4c4a63;
+    --muted:#7a7891;
+    --berry:#4b3bd6;
+    --berry-deep:#32259e;
+    --leaf:#3fbf74;
+    --cream:#f6f5fb;
+    --card:#ffffff;
+    --line:#e3e1ee;
+    --radius:16px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.75;
+    font-size:16px;
+  }
+  a{color:var(--berry);text-decoration:none}
+  a:hover{text-decoration:underline}
+  img,svg{max-width:100%}
+  .wrap{width:min(1120px,92vw);margin:0 auto}
+
+  /* Header */
+  header.site{
+    background:linear-gradient(135deg,#32259e 0%,#4b3bd6 58%,#6b5bf0 100%);
+    color:#fff;
+    position:relative;
+    overflow:hidden;
+  }
+  header.site::after{
+    content:"";
+    position:absolute;
+    right:-120px;top:-140px;
+    width:380px;height:380px;
+    border-radius:50%;
+    background:radial-gradient(circle at 30% 30%,rgba(95,214,138,.35),rgba(95,214,138,0) 70%);
+  }
+  .topbar{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:20px;padding:20px 0;position:relative;z-index:2;
+  }
+  .brand{display:flex;align-items:center;gap:12px;color:#fff}
+  .brand:hover{text-decoration:none}
+  .brand svg{width:42px;height:42px;flex:0 0 auto}
+  .brand .name{
+    font-size:1.32rem;font-weight:800;letter-spacing:.5px;
+  }
+  nav.main{display:flex;gap:8px;flex-wrap:wrap}
+  nav.main a{
+    color:#eceafe;font-size:.94rem;padding:7px 13px;border-radius:999px;
+    transition:background .2s;
+  }
+  nav.main a:hover{background:rgba(255,255,255,.16);text-decoration:none}
+
+  /* Hero */
+  .hero{padding:26px 0 56px;position:relative;z-index:2}
+  .hero-grid{display:grid;grid-template-columns:1.35fr .85fr;gap:40px;align-items:center}
+  .hero h1{
+    font-size:2.5rem;line-height:1.25;margin:0 0 16px;
+    font-weight:800;letter-spacing:.5px;color:#fff;
+  }
+  .hero p.lead{
+    font-size:1.03rem;color:#dedbfa;margin:0 0 26px;max-width:36em;
+  }
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:12px 24px;border-radius:999px;font-weight:700;font-size:.97rem;
+    border:1px solid transparent;cursor:pointer;
+  }
+  .btn-primary{background:var(--leaf);color:#0d2a1a}
+  .btn-primary:hover{background:#54d38a;text-decoration:none}
+  .btn-ghost{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.4)}
+  .btn-ghost:hover{background:rgba(255,255,255,.2);text-decoration:none}
+  .btn[aria-disabled="true"]{opacity:.72}
+
+  .hero-art{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.24);
+    border-radius:22px;
+    padding:18px;
+    backdrop-filter:blur(4px);
+  }
+  .hero-art .screen{
+    border-radius:14px;overflow:hidden;background:#241a63;
+    box-shadow:0 14px 34px rgba(10,6,40,.4);
+  }
+  .hero-art .meta{display:flex;justify-content:space-between;font-size:.83rem;color:#d7d3fb;padding:12px 4px 0}
+
+  /* Sections */
+  section{padding:56px 0}
+  section.alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .sec-head{max-width:44em;margin-bottom:32px}
+  .eyebrow{
+    display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:2px;
+    color:var(--berry);background:#eceafe;padding:4px 12px;border-radius:999px;margin-bottom:12px;
+  }
+  h2{font-size:1.7rem;line-height:1.35;margin:0 0 12px;font-weight:800}
+  h3{font-size:1.08rem;margin:0 0 8px;font-weight:700}
+  .sec-head p{margin:0;color:var(--ink-soft)}
+
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px;display:flex;flex-direction:column;gap:8px;
+  }
+  .card .icon{
+    width:42px;height:42px;border-radius:12px;background:#eceafe;
+    display:flex;align-items:center;justify-content:center;margin-bottom:6px;
+  }
+  .card p{margin:0;color:var(--ink-soft);font-size:.94rem}
+  .card .tag{font-size:.8rem;color:var(--muted);margin-top:auto;padding-top:10px;border-top:1px dashed var(--line)}
+
+  /* Channel list */
+  .channels{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .chan{
+    display:flex;gap:16px;align-items:flex-start;
+    background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;
+  }
+  .chan .dot{
+    flex:0 0 auto;width:8px;height:8px;border-radius:50%;background:var(--leaf);margin-top:10px;
+  }
+  .chan p{margin:4px 0 0;font-size:.92rem;color:var(--ink-soft)}
+
+  /* Feature / split */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+  .split .panel{
+    background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px;
+  }
+  .bar{display:flex;align-items:center;gap:12px;font-size:.9rem;color:var(--ink-soft);padding:9px 0;border-bottom:1px dashed var(--line)}
+  .bar:last-child{border-bottom:0}
+  .bar .key{width:96px;flex:0 0 auto;color:var(--ink);font-weight:600}
+  .bar .val{flex:1;height:7px;background:#eceafe;border-radius:99px;overflow:hidden}
+  .bar .val i{display:block;height:100%;background:linear-gradient(90deg,var(--berry),var(--leaf));border-radius:99px}
+
+  /* Q&A */
+  .faq{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  details{
+    background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 20px;
+  }
+  details[open]{border-color:#c9c3f2}
+  summary{cursor:pointer;font-weight:700;font-size:.98rem;list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"＋";color:var(--berry);font-weight:700;margin-right:8px}
+  details[open] summary::before{content:"－"}
+  details p{margin:10px 0 0;font-size:.93rem;color:var(--ink-soft)}
+
+  /* Footer */
+  footer.site{
+    background:#1b1930;color:#c9c6dd;padding:44px 0 30px;font-size:.9rem;
+  }
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;margin-bottom:28px}
+  footer.site h4{color:#fff;font-size:.95rem;margin:0 0 10px;font-weight:700}
+  footer.site a{color:#c9c6dd}
+  footer.site a:hover{color:#fff}
+  footer.site ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:7px}
+  .foot-bottom{border-top:1px solid #302d4d;padding-top:18px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:#8f8ba8}
+
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr;gap:32px}
+    .hero-art{order:-1}
+    .cards{grid-template-columns:1fr 1fr}
+    .split{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:640px){
+    body{font-size:15px}
+    .topbar{flex-direction:column;align-items:flex-start;gap:14px;padding:16px 0}
+    nav.main{gap:4px}
+    nav.main a{padding:6px 10px;font-size:.88rem}
+    .hero{padding:14px 0 40px}
+    .hero h1{font-size:1.78rem}
+    .hero p.lead{font-size:.96rem}
+    section{padding:38px 0}
+    h2{font-size:1.34rem}
+    .cards{grid-template-columns:1fr}
+    .channels{grid-template-columns:1fr}
+    .faq{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr;gap:22px}
+    .btn{padding:11px 20px;font-size:.92rem}
+  }
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <div class="topbar">
+      <a class="brand" href="#top" aria-label="蓝莓视频首页">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="36" r="20" fill="#5fd68a" opacity=".22"/>
+          <circle cx="32" cy="36" r="15" fill="#f6f5fb"/>
+          <path d="M28 29v14l12-7z" fill="#4b3bd6"/>
+          <path d="M28 19c1-5 5-8 10-8-1 4-4 7-8 8z" fill="#5fd68a"/>
+        </svg>
+        <span class="name">蓝莓视频</span>
+      </a>
+      <nav class="main" aria-label="主导航">
+        <a href="#channels">频道分类</a>
+        <a href="#experience">播放体验</a>
+        <a href="#library">内容速览</a>
+        <a href="#faq">常见问答</a>
+        <a href="#download">客户端</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>蓝莓视频</h1>
+        <p class="lead">蓝莓视频是一个面向日常观看的在线视频平台。打开网页即可浏览频道分类、挑选喜欢的影视内容并直接播放，无需跳转多个页面。本次首页围绕蓝莓视频的内容分区、清晰度选择与使用路径展开说明。</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#library">浏览内容速览</a>
+          <a class="btn btn-ghost" href="#channels">查看频道分类</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="screen">
+          <svg viewBox="0 0 420 236" role="presentation">
+            <rect width="420" height="236" fill="#241a63"/>
+            <rect x="0" y="0" width="420" height="34" fill="#2e2280"/>
+            <circle cx="18" cy="17" r="5" fill="#5fd68a"/>
+            <circle cx="36" cy="17" r="5" fill="#8f85f2"/>
+            <circle cx="54" cy="17" r="5" fill="#4b3bd6"/>
+            <rect x="24" y="54" width="180" height="12" rx="6" fill="#4b3bd6"/>
+            <rect x="24" y="76" width="120" height="10" rx="5" fill="#3a2f8f"/>
+            <rect x="24" y="106" width="372" height="4" rx="2" fill="#3a2f8f"/>
+            <rect x="24" y="106" width="230" height="4" rx="2" fill="#5fd68a"/>
+            <circle cx="254" cy="108" r="7" fill="#f6f5fb"/>
+            <rect x="24" y="132" width="110" height="76" rx="10" fill="#33279a"/>
+            <path d="M64 156v28l22-14z" fill="#5fd68a"/>
+            <rect x="148" y="132" width="110" height="76" rx="10" fill="#33279a"/>
+            <rect x="272" y="132" width="124" height="76" rx="10" fill="#33279a"/>
+            <rect x="166" y="168" width="74" height="8" rx="4" fill="#4b3bd6"/>
+            <rect x="292" y="168" width="84" height="8" rx="4" fill="#4b3bd6"/>
+          </svg>
+        </div>
+        <div class="meta"><span>在线播放界面示意</span><span>高清 · 自适应</span></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="channels" class="alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">频道分类</span>
+        <h2>蓝莓视频的频道如何划分</h2>
+        <p>蓝莓视频把内容按观看场景组织成若干频道，方便访客按兴趣方向直接进入。下面是常见频道的定位说明，具体片目以站内实时展示为准。</p>
+      </div>
+      <div class="channels">
+        <div class="chan">
+          <span class="dot"></span>
+          <div>
+            <h3>电影频道</h3>
+            <p>以长片为主，适合一次完整的观影安排。片目按上线时间排布，便于按顺序浏览。</p>
+          </div>
+        </div>
+        <div class="chan">
+          <span class="dot"></span>
+          <div>
+            <h3>剧集频道</h3>
+            <p>按剧目组织单集，支持连续观看下一集，适合追剧时保持剧情连贯。</p>
+          </div>
+        </div>
+        <div class="chan">
+          <span class="dot"></span>
+          <div>
+            <h3>纪录频道</h3>
+            <p>偏知识性与观察类内容，单集时长相对独立，适合碎片时间观看。</p>
+          </div>
+        </div>
+        <div class="chan">
+          <span class="dot"></span>
+          <div>
+            <h3>动漫频道</h3>
+            <p>以系列动画为主体，按季与集数归档，便于查找同一系列的不同部分。</p>
+          </div>
+        </div>
+        <div class="chan">
+          <span class="dot"></span>
+          <div>
+            <h3>综艺频道</h3>
+            <p>单期内容独立成条目，更新频率较高，适合按最新上线顺序查看。</p>
+          </div>
+        </div>
+        <div class="chan">
+          <span class="dot"></span>
+          <div>
+            <h3>短片频道</h3>
+            <p>时长较短的内容集合，适合在通勤或休息间隙快速看完一条。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">播放体验</span>
+        <h2>蓝莓视频播放页的几项设置</h2>
+        <p>进入蓝莓视频的播放页后，常见操作集中在清晰度、进度与字幕几处。以下为这些设置的用途说明，实际可选项随内容与设备而不同。</p>
+      </div>
+      <div class="split">
+        <div class="panel">
+          <div class="bar"><span class="key">清晰度</span><span class="val"><i style="width:88%"></i></span><span>标清</span></div>
+          <div class="bar"><span class="key">清晰度</span><span class="val"><i style="width:66%"></i></span><span>高清</span></div>
+          <div class="bar"><span class="key">清晰度</span><span class="val"><i style="width:42%"></i></span><span>超清</span></div>
+          <div class="bar"><span class="key">倍速</span><span class="val"><i style="width:58%"></i></span><span>0.75×–1.5×</span></div>
+          <div class="bar"><span class="key">字幕</span><span class="val"><i style="width:50%"></i></span><span>可开关</span></div>
+          <div class="bar"><span class="key">进度</span><span class="val"><i style="width:74%"></i></span><span>可拖动</span></div>
+        </div>
+        <div>
+          <h3>清晰度与网络条件</h3>
+          <p>清晰度选项通常随网络状况给出建议值。网络不稳定时选择较低档位，可以减少缓冲等待；网络充足时切到更高档位，画面细节更清楚。切换后一般需要短暂重新加载。</p>
+          <h3 style="margin-top:20px">倍速与字幕</h3>
+          <p>倍速适合回看或略过不感兴趣的段落，语速变化后仍保持音画同步。字幕开关独立于画面设置，关闭后不影响播放进度。对于带对白的纪录片，保留字幕通常更利于理解。</p>
+          <h3 style="margin-top:20px">续看与记录</h3>
+          <p>剧集频道会保留最近观看的集数位置，重新打开时可从上次进度继续，避免反复拖动进度条。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="library" class="alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">内容速览</span>
+        <h2>从蓝莓视频找到想看的内容</h2>
+        <p>蓝莓视频的首页与频道页都提供内容入口，区别在于浏览范围。了解两者的分工，能更快定位目标。</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4b3bd6" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M8 4v5"/></svg>
+          </div>
+          <h3>首页推荐位</h3>
+          <p>首页集中展示近期更新的条目，适合没有明确目标时先扫一遍，再进入具体频道。</p>
+          <span class="tag">入口：首页 · 更新排序</span>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4b3bd6" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+          </div>
+          <h3>站内搜索</h3>
+          <p>已知片名时，直接在蓝莓视频的搜索框输入关键词，结果按匹配程度排列，再按频道筛选。</p>
+          <span class="tag">入口：搜索框 · 片名关键词</span>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4b3bd6" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          </div>
+          <h3>频道列表</h3>
+          <p>按频道进入后，可用排序方式浏览全部条目，适合系统地看完某一类型的内容。</p>
+          <span class="tag">入口：频道页 · 分类浏览</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">常见问答</span>
+        <h2>使用蓝莓视频时的常见问题</h2>
+        <p>以下问题来自观看过程中较常遇到的情况，回答仅针对蓝莓视频页面的常规表现，不涉及具体片目授权信息。</p>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>蓝莓视频需要登录才能观看吗？</summary>
+          <p>浏览频道与播放页通常无需登录即可进行。若需要保存观看记录或续看进度，登录后记录会与账号关联，换设备时更容易找回。</p>
+        </details>
+        <details>
+          <summary>播放时一直缓冲怎么办？</summary>
+          <p>可先降低清晰度档位，再检查当前网络是否被其他应用占用。若更换网络后仍持续缓冲，可刷新页面重新连接播放源。</p>
+        </details>
+        <details>
+          <summary>找不到某部片子是什么原因？</summary>
+          <p>蓝莓视频展示的片目会随上线与下架调整，搜索无结果可能表示当前未收录。可换用更短的关键词再试一次。</p>
+        </details>
+        <details>
+          <summary>手机上观看有什么注意点？</summary>
+          <p>手机端播放页的控制条会自动隐藏，轻触画面即可唤出。竖屏下建议横置设备，画面比例更接近原始画幅。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="alt">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <span class="eyebrow">客户端</span>
+          <h2>蓝莓视频客户端下载</h2>
+          <p>客户端适合长时间观看与需要稳定播放的场景，安装后可从桌面直接进入蓝莓视频。当前下载入口正在接入，页面上暂不提供安装包，开放后会在此处更新。</p>
+          <div class="cta-row" style="margin-top:22px">
+            <a class="btn btn-primary" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1" style="pointer-events:none">下载</a>
+            <a class="btn btn-ghost" href="#faq" style="color:#32259e;border-color:#c9c3f2;background:#fff">先看常见问答</a>
+          </div>
+        </div>
+        <div class="panel" style="background:#fff">
+          <h3>客户端可预期的使用方式</h3>
+          <p style="margin:6px 0 14px;color:var(--ink-soft);font-size:.94rem">安装后以独立窗口播放，与网页端共用同一账号体系。</p>
+          <div class="bar"><span class="key">播放窗口</span><span class="val"><i style="width:72%"></i></span><span>独立</span></div>
+          <div class="bar"><span class="key">观看记录</span><span class="val"><i style="width:84%"></i></span><span>与账号同步</span></div>
+          <div class="bar"><span class="key">清晰度</span><span class="val"><i style="width:66%"></i></span><span>随网络调整</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>蓝莓视频</h4>
+        <p style="margin:0;max-width:28em">蓝莓视频是一个在线视频观看平台，内容按频道分类组织，支持清晰度切换与续看进度。本页介绍频道划分、播放设置与常见问题。</p>
+      </div>
+      <div>
+        <h4>站内导航</h4>
+        <ul>
+          <li><a href="#channels">频道分类</a></li>
+          <li><a href="#experience">播放体验</a></li>
+          <li><a href="#library">内容速览</a></li>
+          <li><a href="#faq">常见问答</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>使用提示</h4>
+        <ul>
+          <li><a href="#download">客户端下载</a></li>
+          <li><a href="#faq">缓冲与清晰度</a></li>
+          <li><a href="#library">搜索与频道</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>蓝莓视频 · 页面内容以站内实际展示为准</span>
+      <span>在线观看 · 频道浏览 · 播放设置</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
