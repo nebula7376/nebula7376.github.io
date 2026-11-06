@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>黄瓜影院入口-黄瓜影院在线观影入口_黄瓜影院最新入口地址</title>
+<meta name="description" content="黄瓜影院入口页面，提供黄瓜影院在线观影入口、最新入口地址与使用说明，帮助访客快速找到黄瓜影院入口并了解观影方式与常见问题。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23164b2e'/%3E%3Cpath d='M20 22h24v20H20z' fill='none' stroke='%23b6f09c' stroke-width='3'/%3E%3Cpath d='M28 28l10 6-10 6z' fill='%23b6f09c'/%3E%3C/svg%3E">
+<style>
+:root{
+  --green-900:#0f3a24;
+  --green-800:#164b2e;
+  --green-700:#1d5c39;
+  --lime:#b6f09c;
+  --lime-soft:#e4f7d8;
+  --cream:#f7f5ee;
+  --ink:#1b241f;
+  --muted:#5c6b62;
+  --line:#dfe6da;
+  --radius:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  color:var(--ink);
+  background:var(--cream);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 22px}
+
+/* header */
+header.site{
+  position:sticky;top:0;z-index:50;
+  background:rgba(247,245,238,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:18px;padding:14px 0;
+}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.05rem;letter-spacing:.5px;color:var(--green-900)}
+.logo .mark{
+  width:38px;height:38px;border-radius:11px;
+  background:var(--green-800);
+  display:grid;place-items:center;flex:0 0 auto;
+}
+nav.links{display:flex;gap:26px;font-size:.94rem;color:var(--muted);font-weight:500}
+nav.links a:hover{color:var(--green-800)}
+.nav-cta{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--green-800);color:#fff;
+  padding:9px 18px;border-radius:999px;font-size:.9rem;font-weight:600;
+  border:1px solid var(--green-800);
+  transition:.2s;
+}
+.nav-cta:hover{background:var(--green-700)}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:10px;padding:8px 10px;cursor:pointer}
+.burger span{display:block;width:20px;height:2px;background:var(--green-900);margin:4px 0;border-radius:2px}
+
+/* hero */
+.hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(165deg,var(--green-900) 0%,var(--green-800) 48%,#1f6440 100%);
+  color:#fff;
+  padding:56px 0 64px;
+}
+.hero::before{
+  content:"";position:absolute;inset:auto -80px -140px auto;
+  width:420px;height:420px;border-radius:50%;
+  background:radial-gradient(circle,rgba(182,240,156,.28),transparent 68%);
+}
+.hero::after{
+  content:"";position:absolute;top:-120px;left:-100px;
+  width:340px;height:340px;border-radius:50%;
+  border:1px solid rgba(182,240,156,.22);
+}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:44px;align-items:center;position:relative;z-index:2}
+.tag{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(182,240,156,.14);
+  border:1px solid rgba(182,240,156,.35);
+  color:var(--lime);font-size:.8rem;font-weight:600;
+  padding:5px 13px;border-radius:999px;letter-spacing:.5px;
+}
+h1{
+  font-size:clamp(1.85rem,4.4vw,3rem);
+  line-height:1.24;font-weight:800;margin:18px 0 16px;
+  letter-spacing:.5px;
+}
+.hero p.lead{color:#cfe3d6;font-size:1.02rem;max-width:44ch}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:9px;
+  background:var(--lime);color:var(--green-900);
+  padding:13px 26px;border-radius:999px;font-weight:700;font-size:.98rem;
+  transition:.2s;
+}
+.btn-primary:hover{background:#cdffb4;transform:translateY(-1px)}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:9px;
+  border:1px solid rgba(255,255,255,.36);color:#fff;
+  padding:12px 24px;border-radius:999px;font-weight:600;font-size:.95rem;
+}
+.btn-ghost:hover{border-color:var(--lime);color:var(--lime)}
+.btn-ghost[aria-disabled="true"]{pointer-events:none}
+.hero-stats{
+  display:flex;gap:30px;margin-top:34px;padding-top:22px;
+  border-top:1px solid rgba(255,255,255,.16);flex-wrap:wrap;
+}
+.hero-stats div strong{display:block;font-size:1.28rem;color:var(--lime);font-weight:800}
+.hero-stats div span{font-size:.8rem;color:#b9cfc1}
+
+/* hero card visual */
+.screen{
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(182,240,156,.28);
+  border-radius:20px;padding:16px;
+  box-shadow:0 26px 60px rgba(0,0,0,.28);
+}
+.screen .inner{
+  border-radius:12px;overflow:hidden;background:#0c2a1b;
+  aspect-ratio:16/10;display:grid;place-items:center;position:relative;
+}
+.screen .inner::after{
+  content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 2px,transparent 2px 5px);
+}
+.screen .caption{
+  display:flex;justify-content:space-between;align-items:center;
+  margin-top:12px;font-size:.78rem;color:#a9c7b5;
+}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--lime);display:inline-block;margin-right:6px}
+
+/* sections */
+section{padding:58px 0}
+.sec-head{max-width:660px;margin-bottom:32px}
+.sec-head .kicker{
+  color:var(--green-700);font-weight:700;font-size:.8rem;letter-spacing:2px;
+  text-transform:uppercase;display:block;margin-bottom:8px;
+}
+h2{font-size:clamp(1.35rem,2.6vw,1.85rem);font-weight:800;line-height:1.35;color:var(--green-900)}
+.sec-head p{color:var(--muted);margin-top:10px;font-size:.97rem}
+
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+
+.card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 24px;transition:.22s;
+}
+.card:hover{border-color:#c3ddb4;box-shadow:0 14px 34px rgba(22,75,46,.08);transform:translateY(-2px)}
+.card .ico{
+  width:44px;height:44px;border-radius:12px;background:var(--lime-soft);
+  display:grid;place-items:center;margin-bottom:16px;
+}
+.card h3{font-size:1.05rem;font-weight:700;color:var(--green-900);margin-bottom:8px}
+.card p{font-size:.92rem;color:var(--muted)}
+
+/* entry list */
+.entry-band{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.entry-list{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.entry-item{
+  display:flex;align-items:center;gap:14px;
+  border:1px solid var(--line);border-radius:13px;
+  padding:16px 18px;background:var(--cream);
+  transition:.2s;
+}
+.entry-item:hover{background:var(--lime-soft);border-color:#c3ddb4}
+.entry-item .no{
+  width:34px;height:34px;flex:0 0 auto;border-radius:9px;
+  background:var(--green-800);color:var(--lime);
+  display:grid;place-items:center;font-weight:800;font-size:.85rem;
+}
+.entry-item .txt strong{display:block;font-size:.94rem;color:var(--green-900)}
+.entry-item .txt span{font-size:.8rem;color:var(--muted)}
+
+/* steps */
+.steps{counter-reset:step;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.step{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px 20px;position:relative;
+}
+.step::before{
+  counter-increment:step;content:"0" counter(step);
+  font-size:1.5rem;font-weight:800;color:#cfe6c0;display:block;margin-bottom:10px;
+}
+.step h3{font-size:.98rem;color:var(--green-900);margin-bottom:6px}
+.step p{font-size:.88rem;color:var(--muted)}
+
+/* FAQ */
+.faq{display:grid;gap:14px;max-width:840px}
+details{
+  background:#fff;border:1px solid var(--line);border-radius:13px;
+  padding:18px 22px;
+}
+details[open]{border-color:#c3ddb4}
+summary{
+  cursor:pointer;font-weight:700;color:var(--green-900);font-size:.98rem;
+  list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.3rem;color:var(--green-700);font-weight:400;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin-top:12px;color:var(--muted);font-size:.92rem}
+
+/* notice */
+.notice{
+  background:linear-gradient(120deg,var(--green-800),var(--green-700));
+  color:#fff;border-radius:22px;padding:40px 36px;
+  display:grid;grid-template-columns:1.4fr .6fr;gap:30px;align-items:center;
+}
+.notice h2{color:#fff;font-size:1.35rem;margin-bottom:10px}
+.notice p{color:#cfe3d6;font-size:.94rem}
+.notice .badge{
+  justify-self:end;text-align:center;
+  border:1px dashed rgba(182,240,156,.5);border-radius:16px;
+  padding:20px 26px;color:var(--lime);font-weight:700;font-size:.9rem;
+}
+
+/* footer */
+footer.site{
+  background:var(--green-900);color:#a9c7b5;
+  padding:44px 0 28px;margin-top:10px;
+}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px;padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.12)}
+footer .logo{color:#fff;margin-bottom:12px}
+footer p{font-size:.86rem;line-height:1.8}
+footer h4{color:#fff;font-size:.9rem;margin-bottom:12px;font-weight:700}
+footer ul{list-style:none;display:grid;gap:8px;font-size:.86rem}
+footer ul a:hover{color:var(--lime)}
+.copy{padding-top:20px;font-size:.78rem;color:#7e9b8b;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:32px}
+  .screen{order:-1;max-width:440px}
+  .grid-3,.entry-list,.steps{grid-template-columns:repeat(2,1fr)}
+  .notice{grid-template-columns:1fr}
+  .notice .badge{justify-self:start}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  nav.links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--cream);
+    flex-direction:column;gap:0;padding:8px 22px 18px;border-bottom:1px solid var(--line)}
+  nav.links.open{display:flex}
+  nav.links a{padding:11px 0;border-bottom:1px solid var(--line);font-size:.95rem}
+  .burger{display:block}
+  .nav-cta{display:none}
+  .grid-3,.entry-list,.grid-2,.steps{grid-template-columns:1fr}
+  .hero{padding:38px 0 46px}
+  .hero-stats{gap:18px}
+  .hero-stats div strong{font-size:1.1rem}
+  section{padding:42px 0}
+  .notice{padding:28px 22px}
+  .foot-grid{grid-template-columns:1fr}
+  .card{padding:22px 20px}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="黄瓜影院入口">
+      <span class="mark" aria-hidden="true">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none">
+          <rect x="2.5" y="5" width="19" height="14" rx="2.5" stroke="#b6f09c" stroke-width="1.8"/>
+          <path d="M10 9.2l5.2 2.8L10 14.8z" fill="#b6f09c"/>
+        </svg>
+      </span>
+      黄瓜影院入口
+    </a>
+    <nav class="links" id="navLinks">
+      <a href="#guide">入口说明</a>
+      <a href="#channels">频道导航</a>
+      <a href="#howto">使用步骤</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <a class="nav-cta" href="#guide">进入入口</a>
+    <button class="burger" id="burger" aria-label="展开导航" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="tag"><span class="dot"></span>在线观影入口导航</span>
+        <h1>黄瓜影院入口</h1>
+        <p class="lead">黄瓜影院入口页面汇总了在线观影的入口地址与使用说明，访客可以在这里找到黄瓜影院入口的访问方式，了解频道分类、播放器使用与常见问题，减少反复搜索的时间。</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#guide">
+            查看入口说明
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 12h13M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn-ghost" href="#channels">浏览频道导航</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>1 个</strong><span>主题入口页</span></div>
+          <div><strong>4 类</strong><span>频道方向</span></div>
+          <div><strong>5 条</strong><span>常见问题解答</span></div>
+        </div>
+      </div>
+      <div class="screen" aria-hidden="true">
+        <div class="inner">
+          <svg width="86" height="86" viewBox="0 0 24 24" fill="none">
+            <rect x="2" y="4.5" width="20" height="15" rx="2.6" stroke="#b6f09c" stroke-width="1.4"/>
+            <path d="M9.6 9l5.4 3-5.4 3z" fill="#b6f09c"/>
+          </svg>
+        </div>
+        <div class="caption"><span><span class="dot"></span>播放器预览</span><span>16:10</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENTRY BAND -->
+  <section class="entry-band" id="guide">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">Entry Guide</span>
+        <h2>黄瓜影院入口在哪里找</h2>
+        <p>入口信息以本页为起点整理。访问时请以页面给出的入口说明为准，遇到无法打开的情况，可先检查网络环境，再尝试刷新或更换浏览器。</p>
+      </div>
+      <div class="entry-list">
+        <a class="entry-item" href="#howto">
+          <span class="no">01</span>
+          <span class="txt"><strong>入口地址确认</strong><span>核对域名与页面标题</span></span>
+        </a>
+        <a class="entry-item" href="#channels">
+          <span class="no">02</span>
+          <span class="txt"><strong>频道分类浏览</strong><span>按类型查找想看的内容</span></span>
+        </a>
+        <a class="entry-item" href="#howto">
+          <span class="no">03</span>
+          <span class="txt"><strong>播放器使用</strong><span>清晰度与播放设置</span></span>
+        </a>
+        <a class="entry-item" href="#faq">
+          <span class="no">04</span>
+          <span class="txt"><strong>访问异常处理</strong><span>打不开时的排查顺序</span></span>
+        </a>
+        <a class="entry-item" href="#faq">
+          <span class="no">05</span>
+          <span class="txt"><strong>移动端访问</strong><span>手机浏览的注意事项</span></span>
+        </a>
+        <a class="entry-item" href="#notice">
+          <span class="no">06</span>
+          <span class="txt"><strong>使用提示</strong><span>访问前需要了解的事项</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHANNELS -->
+  <section id="channels">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">Channels</span>
+        <h2>黄瓜影院入口的频道方向</h2>
+        <p>进入黄瓜影院入口后，内容通常按类型分区展示。下面四类是常见的浏览方向，具体内容与数量以入口内实际页面为准。</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <div class="ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 5h16v14H4z" stroke="#1d5c39" stroke-width="1.7"/><path d="M8 5v14M16 5v14" stroke="#1d5c39" stroke-width="1.2"/></svg>
+          </div>
+          <h3>电影专区</h3>
+          <p>以长片内容为主的浏览分区，一般按类型或年份排列。访问黄瓜影院入口后可在该分区查看片名与简介，再决定是否播放。</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="2" stroke="#1d5c39" stroke-width="1.7"/><path d="M10 10l4 2-4 2z" fill="#1d5c39"/></svg>
+          </div>
+          <h3>剧集连载</h3>
+          <p>连续剧与短剧内容的分区，通常按更新顺序排列。黄瓜影院入口的剧集页会显示集数信息，便于按进度继续观看。</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="#1d5c39" stroke-width="1.7"/><path d="M12 7.5V12l3 2" stroke="#1d5c39" stroke-width="1.7" stroke-linecap="round"/></svg>
+          </div>
+          <h3>短视频与片段</h3>
+          <p>时长较短的内容分区，适合碎片时间浏览。该分区条目较多，黄瓜影院入口内通常以列表形式呈现，滑动即可翻看。</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 18V9l8-5 8 5v9z" stroke="#1d5c39" stroke-width="1.7"/><path d="M9.5 18v-5h5v5" stroke="#1d5c39" stroke-width="1.5"/></svg>
+          </div>
+          <h3>专题合集</h3>
+          <p>围绕同一主题聚合的内容集合。专题页会集中列出相关条目，黄瓜影院入口的专题区适合按兴趣整体浏览。</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 5h14v14H5z" stroke="#1d5c39" stroke-width="1.7"/><path d="M9 9h6M9 13h4" stroke="#1d5c39" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3>搜索与筛选</h3>
+          <p>通过名称或关键词定位内容的常用功能。黄瓜影院入口的搜索框支持输入片名，结果页可按类型进一步缩小范围。</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6L3.3 9.3l6.1-.7z" stroke="#1d5c39" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>收藏与记录</h3>
+          <p>用于保存常看内容的功能。登录状态下的收藏与播放记录通常与账号关联，黄瓜影院入口内的个人页可查看这些条目。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOWTO -->
+  <section id="howto" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">How To</span>
+        <h2>通过黄瓜影院入口访问的四步</h2>
+        <p>从打开页面到开始播放，整个流程并不复杂。下面四步按实际操作顺序排列，可作为初次访问黄瓜影院入口时的参考。</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>核对入口</h3>
+          <p>打开页面后先确认标题与域名，避免误入名称相近的页面，这是使用黄瓜影院入口前的第一步。</p>
+        </div>
+        <div class="step">
+          <h3>选择内容</h3>
+          <p>通过频道列表或搜索框找到想看的内容，点击条目进入详情，查看简介与集数信息。</p>
+        </div>
+        <div class="step">
+          <h3>开始播放</h3>
+          <p>在详情页点击播放按钮。若加载较慢，可先暂停数秒等待缓冲，再恢复播放。</p>
+        </div>
+        <div class="step">
+          <h3>调整设置</h3>
+          <p>根据网络情况切换清晰度，必要时开启全屏。移动端可在横屏下获得更宽的画面。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">FAQ</span>
+        <h2>黄瓜影院入口常见问题</h2>
+        <p>以下问题来自访问入口时较常遇到的情况，回答仅针对本页所提供的信息范围。</p>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>黄瓜影院入口打不开怎么办？</summary>
+          <p>先确认网络连接是否正常，再尝试刷新页面或更换浏览器。若仍无法访问，可能是当前入口暂时不可用，可稍后重试，并以页面后续更新的入口说明为准。</p>
+        </details>
+        <details>
+          <summary>黄瓜影院入口需要注册吗？</summary>
+          <p>浏览内容通常不需要额外操作，但收藏、播放记录等与账号关联的功能，一般需要登录后才能保存。具体以入口内页面提示为准。</p>
+        </details>
+        <details>
+          <summary>播放时卡顿如何改善？</summary>
+          <p>可先在播放器中降低清晰度，关闭同时占用带宽的其他应用，再重新加载页面。无线网络环境下，靠近路由器也有助于稳定播放。</p>
+        </details>
+        <details>
+          <summary>手机上如何使用黄瓜影院入口？</summary>
+          <p>用手机浏览器打开本页并进入入口即可，页面已适配小屏。横屏观看画面更宽，注意保持系统与浏览器的更新。</p>
+        </details>
+        <details>
+          <summary>入口地址会变化吗？</summary>
+          <p>入口地址存在调整的可能，因此建议从固定的入口页面进入，而不是依赖历史记录中保存的旧链接。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOTICE -->
+  <section id="notice" style="padding-top:0">
+    <div class="wrap">
+      <div class="notice">
+        <div>
+          <h2>访问黄瓜影院入口前的提示</h2>
+          <p>请合理安排观看时间，注意用眼与休息。访问第三方页面时，不建议在陌生表单中填写账号密码等敏感信息；遇到要求下载不明程序或输入支付信息的页面，应停止操作并关闭。本页仅整理入口信息，不存储视频文件。</p>
+        </div>
+        <div class="badge">理性观影 · 注意安全</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="logo">
+          <span class="mark" aria-hidden="true">
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none">
+              <rect x="2.5" y="5" width="19" height="14" rx="2.5" stroke="#b6f09c" stroke-width="1.8"/>
+              <path d="M10 9.2l5.2 2.8L10 14.8z" fill="#b6f09c"/>
+            </svg>
+          </span>
+          黄瓜影院入口
+        </div>
+        <p>整理黄瓜影院入口的访问方式、频道方向与使用说明，帮助访客更快找到入口，并了解播放与排查问题的基本方法。</p>
+      </div>
+      <div>
+        <h4>页面导航</h4>
+        <ul>
+          <li><a href="#guide">入口说明</a></li>
+          <li><a href="#channels">频道导航</a></li>
+          <li><a href="#howto">使用步骤</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>相关入口</h4>
+        <ul>
+          <li><a href="#top">回到页面顶部</a></li>
+          <li><a href="#notice">访问提示</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2025 黄瓜影院入口 · 入口信息导航页</span>
+      <span>内容以页面实际说明为准</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('burger');
+  var nav=document.getElementById('navLinks');
+  if(btn&&nav){
+    btn.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded',open?'true':'false');
+    });
+    nav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click',function(){
+        nav.classList.remove('open');
+        btn.setAttribute('aria-expanded','false');
+      });
+    });
+  }
+})();
+</script>
+</body>
+  </html>
